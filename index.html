@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Videos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
+      color: #222;
+      background: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      background: #2f6feb;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 24px;
+      margin-top: 20px;
+    }
+
+    .video-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      background: #fafafa;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .abstract {
+      text-align: justify;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Demo Videos</h1>
+
+  <div class="subtitle">
+    Experimental demonstration videos for the project.
+  </div>
+
+  <div class="buttons">
+    <a href="https://github.com/wuweiniuniu/videos">Repository</a>
+    <a href="https://github.com/wuweiniuniu/videos/releases/latest">Download Videos</a>
+  </div>
+
+  <h2>Demo Videos</h2>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <video controls muted loop playsinline preload="metadata">
+        <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/extreme_condition.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Extreme-condition test</div>
+    </div>
+
+    <div class="video-card">
+      <video controls muted loop playsinline preload="metadata">
+        <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/mild_condition.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Mild-condition test</div>
+    </div>
+
+  </div>
+
+  <h2>Abstract</h2>
+
+  <p class="abstract">
+    This page presents experimental demonstration videos for the project. 
+    The videos illustrate the system performance under different driving conditions.
+  </p>
+
+</body>
+</html>
