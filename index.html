@@ -1,131 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Demo Videos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #222;
-      background: #ffffff;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 35px;
-    }
-
-    .buttons {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 6px;
-      padding: 10px 18px;
-      border-radius: 6px;
-      background: #2f6feb;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-      gap: 24px;
-      margin-top: 20px;
-    }
-
-    .video-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      background: #fafafa;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-
-    video {
-      width: 100%;
-      border-radius: 8px;
-      background: #000;
-    }
-
-    .caption {
-      text-align: center;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .abstract {
-      text-align: justify;
-      margin-top: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoFiDrive Project Page</title>
+  <meta name="description" content="Project page for autonomous driving video demonstration, paper, code, and dataset." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <main class="page">
+    <section class="hero">
+      <!-- 修改这里的题目即可 -->
+      <h1>
+        CoFiDrive: Coarse-to-Fine Diffusion<br />
+        Planning for Closed-Loop Autonomous<br class="desktop-break" />
+        Driving
+      </h1>
 
-  <h1>Demo Videos</h1>
+      <div class="button-row" aria-label="project links">
+        <!-- 论文上传后，把 href 改成 paper/your-paper.pdf，并删除 disabled 类 -->
+        <a class="btn disabled" href="#release-note" aria-disabled="true">📄 Paper</a>
+        <!-- 代码上传后，把 href 改成 code/ 或 GitHub 代码目录链接，并删除 disabled 类 -->
+        <a class="btn disabled" href="#release-note" aria-disabled="true">🐙 Code</a>
+        <!-- 数据集上传后，把 href 改成 dataset/ 或数据集下载链接，并删除 disabled 类 -->
+        <a class="btn disabled" href="#release-note" aria-disabled="true">🗄️ Dataset</a>
+      </div>
 
-  <div class="subtitle">
-    Experimental demonstration videos for the project.
-  </div>
+      <p id="release-note" class="release-note">
+        📌 Due to the double-blind review policy, all code, datasets, and checkpoints will be released after the review process.
+      </p>
+    </section>
 
-  <div class="buttons">
-    <a href="https://github.com/wuweiniuniu/videos">Repository</a>
-    <a href="https://github.com/wuweiniuniu/videos/releases/latest">Download Videos</a>
-  </div>
+    <section class="video-section">
+      <h2>Demo Video</h2>
+      <p class="section-intro">
+        The following video demonstrates the closed-loop autonomous driving performance of the proposed method.
+      </p>
 
-  <h2>Demo Videos</h2>
+      <div class="video-card">
+        <!-- 把你的视频文件放到 assets/demo.mp4；如果文件名不同，修改下面 src -->
+        <video controls preload="metadata" poster="assets/poster.jpg">
+          <source src="assets/demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
-  <div class="video-grid">
+    <section class="content-grid">
+      <article class="info-card">
+        <h2>Overview</h2>
+        <p>
+          This page is a lightweight project homepage for presenting the paper, source code, dataset, and video demonstrations. Replace this paragraph with a concise description of your method and experimental platform.
+        </p>
+      </article>
 
-    <div class="video-card">
-      <video controls muted loop playsinline preload="metadata">
-        <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/extreme_condition.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="caption">Extreme-condition test</div>
-    </div>
-
-    <div class="video-card">
-      <video controls muted loop playsinline preload="metadata">
-        <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/mild_condition.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="caption">Mild-condition test</div>
-    </div>
-
-  </div>
-
-  <h2>Abstract</h2>
-
-  <p class="abstract">
-    This page presents experimental demonstration videos for the project. 
-    The videos illustrate the system performance under different driving conditions.
-  </p>
-
+      <article class="info-card">
+        <h2>Resources</h2>
+        <ul>
+          <li><strong>Paper:</strong> Coming soon.</li>
+          <li><strong>Code:</strong> Coming soon.</li>
+          <li><strong>Dataset:</strong> Coming soon.</li>
+          <li><strong>Video:</strong> Put your MP4 file in <code>assets/demo.mp4</code>.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
