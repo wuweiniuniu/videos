@@ -3,195 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoFiDrive: Coarse-to-Fine Diffusion Planning for Closed-Loop Autonomous Driving</title>
 
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #14213d;
-      --muted: #5d6b82;
-      --card: #ffffff;
-      --border: #e6e9f0;
-      --btn: #17233a;
-      --btn-hover: #24324e;
-      --shadow: 0 10px 30px rgba(20, 33, 61, 0.10);
-    }
+  <title>CoFiDrive Project Page</title>
+  <meta name="description" content="Project page for autonomous driving video demonstration, paper, code, and dataset." />
 
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    .page {
-      width: min(1100px, 92%);
-      margin: 0 auto;
-      padding: 48px 0 60px;
-    }
-
-    .hero {
-      text-align: center;
-      padding-top: 10px;
-    }
-
-    .hero h1 {
-      margin: 0 auto;
-      max-width: 980px;
-      font-size: clamp(42px, 6vw, 76px);
-      line-height: 1.08;
-      font-weight: 800;
-      letter-spacing: -1.8px;
-      color: var(--text);
-    }
-
-    .button-row {
-      margin-top: 34px;
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 22px;
-      border-radius: 10px;
-      background: var(--btn);
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 700;
-      box-shadow: var(--shadow);
-      transition: 0.2s ease;
-    }
-
-    .btn:hover {
-      background: var(--btn-hover);
-      transform: translateY(-1px);
-    }
-
-    .notice {
-      margin: 30px auto 58px;
-      max-width: 920px;
-      text-align: center;
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--muted);
-    }
-
-    .video-section {
-      text-align: center;
-      margin: 0 auto 54px;
-    }
-
-    .video-section h2 {
-      font-size: 34px;
-      margin: 0 0 12px;
-      color: var(--text);
-    }
-
-    .section-intro {
-      max-width: 780px;
-      margin: 0 auto 24px;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .video-card {
-      margin: 28px auto;
-      padding: 14px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: var(--card);
-      box-shadow: var(--shadow);
-      max-width: 920px;
-    }
-
-    .video-card h3 {
-      margin: 10px 0 14px;
-      font-size: 24px;
-      color: var(--text);
-    }
-
-    video {
-      display: block;
-      width: 100%;
-      border-radius: 12px;
-      background: #0d1628;
-      outline: none;
-    }
-
-    .content-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 42px;
-    }
-
-    .card {
-      padding: 26px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: var(--card);
-      box-shadow: var(--shadow);
-    }
-
-    .card h2 {
-      margin: 0 0 12px;
-      font-size: 26px;
-      color: var(--text);
-    }
-
-    .card p {
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.65;
-      color: var(--muted);
-    }
-
-    .card ul {
-      margin: 10px 0 0;
-      padding-left: 22px;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    footer {
-      margin-top: 48px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    @media (max-width: 720px) {
-      .page {
-        width: 94%;
-        padding-top: 32px;
-      }
-
-      .hero h1 {
-        font-size: 40px;
-      }
-
-      .btn {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .content-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -199,65 +15,83 @@
     <section class="hero">
       <h1>
         CoFiDrive: Coarse-to-Fine Diffusion<br />
-        Planning for Closed-Loop Autonomous<br />
+        Planning for Closed-Loop Autonomous<br class="desktop-break" />
         Driving
       </h1>
 
-      <div class="button-row">
-        <a class="btn" href="#release-note">📄 Paper</a>
-        <a class="btn" href="https://github.com/wuweiniuniu/videos/tree/main/code" target="_blank">🐙 Code</a>
-        <a class="btn" href="https://github.com/wuweiniuniu/videos/tree/main/dataset" target="_blank">🗄️ Dataset</a>
+      <div class="button-row" aria-label="project links">
+        <a class="btn disabled" href="#release-note" aria-disabled="true">📄 Paper</a>
+
+        <a class="btn" href="https://github.com/wuweiniuniu/videos/tree/main/code" target="_blank" rel="noopener">
+          🐙 Code
+        </a>
+
+        <a class="btn" href="https://github.com/wuweiniuniu/videos/tree/main/dataset" target="_blank" rel="noopener">
+          🗄️ Dataset
+        </a>
       </div>
 
-      <p id="release-note" class="notice">
+      <p id="release-note" class="release-note">
         📌 Due to the double-blind review policy, all code, datasets, and checkpoints will be released after the review process.
       </p>
     </section>
 
     <section class="video-section" id="demo-videos">
       <h2>Demo Videos</h2>
+
       <p class="section-intro">
         The following videos demonstrate the closed-loop autonomous driving performance under different test conditions.
       </p>
 
       <div class="video-card">
         <h3>Mild Condition</h3>
+
         <video controls preload="metadata">
           <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/mild_condition.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
+        <p class="section-intro">
+          <a href="https://github.com/wuweiniuniu/videos/releases/download/video_pages/mild_condition.mp4" target="_blank" rel="noopener">
+            Open Mild Condition Video
+          </a>
+        </p>
       </div>
 
       <div class="video-card">
         <h3>Extreme Condition</h3>
+
         <video controls preload="metadata">
           <source src="https://github.com/wuweiniuniu/videos/releases/download/video_pages/extreme_condition.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
+        <p class="section-intro">
+          <a href="https://github.com/wuweiniuniu/videos/releases/download/video_pages/extreme_condition.mp4" target="_blank" rel="noopener">
+            Open Extreme Condition Video
+          </a>
+        </p>
       </div>
     </section>
 
     <section class="content-grid">
-      <div class="card">
+      <article class="info-card">
         <h2>Overview</h2>
         <p>
-          This project page provides demonstration videos, source code, and dataset files for closed-loop autonomous driving experiments.
+          This page presents the source code, dataset files, and demonstration videos for the closed-loop autonomous driving experiments.
         </p>
-      </div>
+      </article>
 
-      <div class="card">
+      <article class="info-card">
         <h2>Resources</h2>
         <ul>
-          <li>Code files are stored in the <strong>code</strong> folder.</li>
-          <li>Dataset files are stored in the <strong>dataset</strong> folder.</li>
-          <li>Large demo videos are stored in GitHub Releases.</li>
+          <li><strong>Paper:</strong> Coming soon.</li>
+          <li><strong>Code:</strong> MATLAB and Simulink files are available in the code folder.</li>
+          <li><strong>Dataset:</strong> Experimental data files are available in the dataset folder.</li>
+          <li><strong>Videos:</strong> Large MP4 files are stored in GitHub Releases.</li>
         </ul>
-      </div>
+      </article>
     </section>
-
-    <footer>
-      © 2026 wuweiniuniu/videos
-    </footer>
   </main>
 </body>
 </html>
